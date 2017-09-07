@@ -4,7 +4,7 @@
   "description": "Vue 服务端渲染示例项目",
   "main": "src/index.js",
   "scripts": {
-    "start": "node -r babel-register -r babel-polyfill .",
+    "start": "npm run build:server && npm run dev",
     "dev": "node -r babel-register -r babel-polyfill dist/server.js",
     "build:server": "node -r babel-register -r babel-polyfill node_modules/webpack/bin/webpack --config config/webpack.config.server.js"
   },
